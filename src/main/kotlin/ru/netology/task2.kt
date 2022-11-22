@@ -38,6 +38,6 @@ fun commission(paymentSystem: String, paymentMemory: Int, sumOfMoney: Int): Int 
         (paymentSystem == "MasterCard" || paymentSystem == "Maestro") && paymentMemory + sumOfMoney > limitMasterMaestro -> (sumOfMoney * perSentCommissionMaster + fixCommissionMaster).toInt()
         (paymentSystem == "МИР" || paymentSystem == "VISA") && relevantVisaCommission <= minVisaCommission -> minVisaCommission
         (paymentSystem == "МИР" || paymentSystem == "VISA") && relevantVisaCommission > minVisaCommission -> relevantVisaCommission
-        else -> 10
+        else -> 0
     }
 }
