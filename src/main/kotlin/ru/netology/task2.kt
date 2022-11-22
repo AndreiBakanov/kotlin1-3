@@ -1,9 +1,9 @@
 package ru.netology
 
 fun main() {
-    val paymentSystem = "МИР"
+    val paymentSystem = "VK Pay"
     val paymentMemory = 0
-    val sumOfMoney = 400000
+    val sumOfMoney = 4000
     if (isTransferAvailable(
             paymentSystem,
             paymentMemory,

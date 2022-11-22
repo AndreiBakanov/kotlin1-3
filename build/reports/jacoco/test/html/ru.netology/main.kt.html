@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>main.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Kotlin1-3</a> &gt; <a href="index.source.html" class="el_package">ru.netology</a> &gt; <span class="el_source">main.kt</span></div><h1>main.kt</h1><pre class="source lang-java linenums">package ru.netology
+
+fun main() {
+<span class="nc" id="L4">    val ourNumber = 1380</span>
+    fun hoursText(seconds: Int): String {
+<span class="nc" id="L6">        val hours = seconds / 3600</span>
+<span class="nc" id="L7">        val remnant1 = hours % 10</span>
+<span class="nc" id="L8">        val remnant2 = hours / 10 % 10</span>
+<span class="nc" id="L9">        return when {</span>
+<span class="nc bnc" id="L10" title="All 4 branches missed.">            remnant1 == 1 &amp;&amp; remnant2 != 1 -&gt; &quot;С‡Р°СЃ&quot;</span>
+<span class="nc bnc" id="L11" title="All 8 branches missed.">            remnant1 == 2 || remnant2 == 3 || remnant1 == 4 &amp;&amp; remnant2 != 1 -&gt; &quot;С‡Р°СЃР°&quot;</span>
+<span class="nc" id="L12">            else -&gt; &quot;С‡Р°СЃРѕРІ&quot;</span>
+        }
+    }
+
+    fun minutesText(seconds: Int): String {
+<span class="nc" id="L17">        val minutes = seconds / 60</span>
+<span class="nc" id="L18">        val remnant1 = minutes % 10</span>
+<span class="nc" id="L19">        val remnant2 = minutes / 10 % 10</span>
+<span class="nc" id="L20">        return when {</span>
+<span class="nc bnc" id="L21" title="All 4 branches missed.">            remnant1 == 1 &amp;&amp; remnant2 != 1 -&gt; &quot;РјРёРЅСѓС‚Сѓ&quot;</span>
+<span class="nc bnc" id="L22" title="All 8 branches missed.">            remnant1 == 2 || remnant1 == 3 || remnant1 == 4 &amp;&amp; remnant2 != 1 -&gt; &quot;РјРёРЅСѓС‚С‹&quot;</span>
+<span class="nc" id="L23">            else -&gt; &quot;РјРёРЅСѓС‚&quot;</span>
+        }
+    }
+    fun correctText(seconds: Int): String {
+<span class="nc" id="L27">        val minutes = seconds / 60</span>
+<span class="nc" id="L28">        val hours = seconds / 3600</span>
+<span class="nc" id="L29">        return when {</span>
+<span class="nc bnc" id="L30" title="All 2 branches missed.">            seconds &lt; 61 -&gt; &quot;С‚РѕР»СЊРєРѕ С‡С‚Рѕ&quot;</span>
+<span class="nc bnc" id="L31" title="All 4 branches missed.">            seconds &gt; 60 &amp;&amp; seconds &lt;= 60 * 60 -&gt; &quot; $minutes &quot; + minutesText(seconds) + &quot; РЅР°Р·Р°Рґ&quot;</span>
+<span class="nc bnc" id="L32" title="All 4 branches missed.">            seconds &gt; 60 &amp;&amp; seconds &lt;= 24 * 60 * 60 -&gt; &quot; $hours &quot; + hoursText(seconds) + &quot; РЅР°Р·Р°Рґ&quot;</span>
+<span class="nc bnc" id="L33" title="All 4 branches missed.">            seconds &gt; 24 * 60 * 60 &amp;&amp; seconds &lt;= 24 * 60 * 60 * 2 -&gt; &quot; РІС‡РµСЂР°&quot;</span>
+<span class="nc bnc" id="L34" title="All 4 branches missed.">            seconds &gt; 24 * 60 * 60 * 2 &amp;&amp; seconds &lt;= 24 * 60 * 60 * 3 -&gt; &quot; РїРѕР·Р°РІС‡РµСЂР°&quot;</span>
+<span class="nc" id="L35">            else -&gt; &quot; РґР°РІРЅРѕ&quot;</span>
+        }
+    }
+<span class="nc" id="L38">    val finalFrase = &quot;Р±С‹Р»(Р°)&quot; + correctText(ourNumber)</span>
+<span class="nc" id="L39">    println(finalFrase)</span>
+
+<span class="nc" id="L41">}</span>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

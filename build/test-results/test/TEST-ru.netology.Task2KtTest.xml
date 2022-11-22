@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.netology.Task2KtTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-11-22T14:50:59" hostname="LAPTOP-URETPCI2" time="0.025">
+  <properties/>
+  <testcase name="commissionVisaNo35" classname="ru.netology.Task2KtTest" time="0.019"/>
+  <testcase name="isTransferAvailableVkTrue" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="commissionVisa35" classname="ru.netology.Task2KtTest" time="0.001"/>
+  <testcase name="commissionVkZero" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="commissionMasterNoZero" classname="ru.netology.Task2KtTest" time="0.001"/>
+  <testcase name="commissionMaestroZero" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="isTransferAvailableVkFalse" classname="ru.netology.Task2KtTest" time="0.001"/>
+  <testcase name="commissionMir35" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="commissionMasterZero" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="isTransferAvailableTrue" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="isTransferAvailableFalse" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="commissionMirNo35" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <testcase name="commissionMaestroNoZero" classname="ru.netology.Task2KtTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
